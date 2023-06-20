@@ -1,3 +1,12 @@
+* Figma for UI/UX Design
+* MidJourney
+* Excalidraw for Component Hierarchy (Thinking in React Design Princples)
+* APILayer // Weather Stack for weather Rest API
+* React.JS
+* ES6 JS
+* CSS
+* HTML
+* Webpack Bundler
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
