@@ -1,26 +1,28 @@
-import React from "react";
+import React, {useEffect, useState} from "react";
 
 export default function Weather(){
 
-    const fetchWeatherData = async ()  => {
-        try{
-            const response = await fetch(`http://api.weatherstack.com/current?access_key=17aa6c651ed4132ecb3e45b49aaa5cce&query=Bozeman`);
-        if (!response.ok) {
-            throw new Error(`HTTP error! status: ${response.status}`);
-        }
-        const data = await response.json();
-        console.log(data);
-        console.log("hi");
-        
-        
-        }catch (error){
-            console.log(`Fetch error: ${error}`); 
-        }  
-    };
+    const [weatherData, setWeatherData] = useState({});
+
+    useEffect(() => {
+        //not a real api key
+        fetch('http://api.weatherstack.com/current?access_key=d6731c7ad46fa65a1c5a830d19c672cb&query=Bozeman')
+            .then((resonse) => resonse.json())
+            .then((data) => {
+                console.log(data);
+                console.log("hi");
+                
+                setWeatherData(data);
+            })
+            .catch((err) => {
+                console.log(err.message);
+            });  
+    }, [])
+
 
     return(
         <div>
-            The Weather is {data}
-        </div>
+            The Weather iasasdasddasds {}
+        </div> 
     );
 }
