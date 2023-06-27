@@ -1,13 +1,11 @@
-// api/server.js
-
-const express = require("express")
+const express = require('express')
 const app = express()
+const port = 5000;
 
-app.get("/", function(req, res) {
-    res.send("It's working!")
-  });
-  
+app.get('/', (req, res) => {
+  res.send('Hello World!')
+});
 
-app.listen(3001, () => {
-  console.log("app listening on port 3000")
+app.listen(port, () => {
+  console.log(`Example app listening on port ${port}`)
 });
