@@ -1,43 +1,36 @@
-import React from "react";
+import React, {useEffect, useState} from "react";
+import WeatherSpecifics from "./WeatherSpecifics.js";
 
 export default function Weather(){
 
-    //const [weatherData, setWeatherData] = useState(null);
+    const [weatherData, setWeatherData] = useState(null);
 
-
-     const testData = async () => {
+    
+    const fetchWeatherData = async () => {
         try {
-            const response = await fetch('http://api.weatherstack.com/current?access_key=2295f4a6ab5c0563e7994f2d72620085&query=Bozeman');
-            const data = await response.json();
-            console.log(data);
+          const response = await fetch('https://api.weatherstack.com/current?access_key=0e24dc66bceaaad7ff88da794fad4a9d&query=Bozeman');
+          const weatherData = await response.json();
+          setWeatherData(weatherData);
+          //console.log(weatherData);
+          //console.log(weatherData.location.name);
+          return weatherData;
+        } catch (error) {
+          console.log(`There was an error: ${error}`);
+          return null;
+        }
+      }
 
-          } catch (error) {
-            console.error('Error fetching weather data:', error);
-            throw error;
-          }
+      useEffect(() => {
+        fetchWeatherData()
+      }, []);
 
-     };
 
-     testData();
-     /*
-    useEffect(() => {
-        //not a real api key
-        fetch('http://api.weatherstack.com/current?access_key=2295f4a6ab5c0563e7994f2d72620085&query=Bozeman')
-            .then((resonse) => resonse.json())
-            .then((data) => {
-                console.log(data);
-                setWeatherData(data);
-            })
-            .catch((err) => {
-                console.log(err.message);
-            });  
-    }, [])
-    */
+    
+      
 
     return(
-        <div>
-            Somethinssg E1{}
-            I dont know 
+        <div className="weather-wrapper">
+            <WeatherSpecifics weatherData={weatherData}></WeatherSpecifics>
         </div> 
     );
 }
