@@ -1,6 +1,8 @@
 import React, {useEffect, useState} from "react";
 import WeatherDetailManager from "./WeatherDetailManager";
 
+import '../styles/weather.css'
+
 export default function Weather(){
 
     const [weatherData, setWeatherData] = useState(null);
@@ -25,7 +27,7 @@ export default function Weather(){
             `&hourly=${hourly}` +
             `&units=${units}`);
             const weatherJSON = await response.json();       
-            console.log(weatherJSON);
+            //console.log(weatherJSON);
             
             setWeatherData(weatherJSON);
             setIsLoading(false);

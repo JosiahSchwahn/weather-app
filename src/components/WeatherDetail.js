@@ -1,18 +1,26 @@
 import React from "react";
-
+import '../styles/weatherdetail.css'
 
 const WeatherDetails = ({title, data, icon}) => {
+
 
     return(
         <div className="weather_specfic_wrapper">
 
             <div className="ws_icon">
-            <img alt="cloud_icon"></img>  
+            <img src={icon} alt="cloud_icon"></img>  
             </div>
 
             <div className="ws_info">
-                <div className="ws_title">{title}</div>
-                <div className="ws_value"></div>
+
+                <div className="ws_title">
+                    {title}
+                </div>
+
+                <div className="ws_value">
+                    {data}
+                </div>
+
             </div>
 
         </div>

@@ -1,0 +1,17 @@
+.wdm_wrapper{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+
+}
+
+.live_weather{
+    align-self: flex-start;
+
+}
+
+.weather_details{
+
+    align-self: flex-end;
+
+}
