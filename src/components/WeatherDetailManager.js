@@ -23,7 +23,13 @@ const WeatherDetailManager = ({weatherData}) => {
 
             <div className="live_weather">
 
-                <LiveWeather weatherDescription = {weatherData.current.weather_descriptions}></LiveWeather>
+                <LiveWeather
+                description = {weatherData.current.weather_descriptions}
+                location = {weatherData.location.name}
+                time = {weatherData.location.localtime}
+                temperature = {weatherData.current.temperature}
+                display_unit = {weatherData.request.unit}
+                ></LiveWeather>
 
             </div>
 

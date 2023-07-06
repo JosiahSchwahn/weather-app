@@ -14,7 +14,7 @@ const WeatherDetails = ({title, data, icon}) => {
             <div className="ws_info">
 
                 <div className="ws_title">
-                    {title}
+                    <b>{title}</b>
                 </div>
 
                 <div className="ws_value">

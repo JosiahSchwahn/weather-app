@@ -1,17 +1,19 @@
 .wdm_wrapper{
+    box-sizing: border-box;
     display: flex;
     flex-direction: row;
-    width: 100%;
-
+    
 }
 
 .live_weather{
-    align-self: flex-start;
-
+    font-style:italic;
+    font-size: 30px;
+    font-weight: 600;
+    margin-right: auto;
 }
 
 .weather_details{
-
-    align-self: flex-end;
+    font-style: oblique;
+    margin-left: auto;
 
 }

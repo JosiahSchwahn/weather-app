@@ -1,0 +1,28 @@
+div.lw_wrapper{
+
+    color: var(--font-color-gray);
+}
+
+
+div.lw_description, div.lw_temperature{
+
+    font-size: 48px;
+    font-style: normal;
+
+
+}
+
+div.lw_location{
+
+    font-size: 20px;
+
+
+}
+
+div.lw_date, div.lw_time{
+
+    font-size: 16px;
+
+}
+
+
