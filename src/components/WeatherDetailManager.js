@@ -15,7 +15,7 @@ import LiveWeather from "./LiveWeather";
 const WeatherDetailManager = ({weatherData}) => {
 
     console.log(weatherData);
-    
+
 
     return(
 
@@ -40,10 +40,10 @@ const WeatherDetailManager = ({weatherData}) => {
                 <WeatherDetails title = "Wind Speed" data={weatherData.current.wind_speed} icon = {windLogo}></WeatherDetails>
 
             </div>
-           
+
         </div>
     )
-  
+
 }
 
 export default WeatherDetailManager;
