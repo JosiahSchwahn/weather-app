@@ -2,7 +2,6 @@ import React, {useEffect, useState} from "react";
 import WeatherDetailManager from "./WeatherDetailManager";
 
 import '../styles/weather.css'
-import Forcast from "./HourlyForcast";
 import HourlyForcast from "./HourlyForcast";
 
 export default function Weather(){
@@ -18,9 +17,6 @@ export default function Weather(){
     const hourly = `1`;
     const interval = `1`;
     const units = `f`;
-
-
-
 
     const currentDate = () => {
         const currentDate = new Date();
@@ -72,10 +68,10 @@ export default function Weather(){
 
             {isLoading ? (<div>Application is Loading</div>) :
             //when API returns, change from loading state to displaying weather data
-            (<div>
+            (<>
                 <WeatherDetailManager weatherData = {weatherData}></WeatherDetailManager>
                 <HourlyForcast weatherData = {weatherData} currentDate = {currentDate()}></HourlyForcast>
-            </div>
+            </>
             )}
         </div>
     )

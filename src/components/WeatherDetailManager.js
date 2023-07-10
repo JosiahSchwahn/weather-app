@@ -2,10 +2,10 @@ import React from "react";
 
 import '../styles/weatherdetailmanager.css'
 
-import feelsLogo from "../assets/svgs/FEELSLIKE.svg";
-import cloudLogo from "../assets/svgs/CLOUD.svg";
-import rainLogo from "../assets/svgs/RAIN.svg";
-import windLogo from "../assets/svgs/WIND.svg";
+import feelsLogo from "../assets/svgs/detailSVGs/FEELSLIKE.svg";
+import cloudLogo from "../assets/svgs/detailSVGs/CLOUD.svg";
+import rainLogo from "../assets/svgs/detailSVGs/RAIN.svg";
+import windLogo from "../assets/svgs/detailSVGs/WIND.svg";
 
 
 import WeatherDetails from "./WeatherDetail";
@@ -14,9 +14,7 @@ import LiveWeather from "./LiveWeather";
 
 const WeatherDetailManager = ({weatherData}) => {
 
-   // console.log(weatherData);
-
-
+   console.log(weatherData);
     return(
 
         <div className="wdm_wrapper">

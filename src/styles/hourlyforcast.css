@@ -1,4 +1,27 @@
 
+button{
+    padding: 0px;
+	border: none;
+	cursor: pointer;
+    background: none;
+
+}
+
+div.button-wrapper{
+    margin-bottom: 30px;
+    display: flex;
+    max-width: 130px;
+    margin-left: 20px;
+}
+
+
+.hf-component-wrapper{
+
+    height: 250px;
+    margin-top: auto;
+
+}
+
 .live_array{
     display: flex;
     flex-direction: row;
@@ -20,6 +43,29 @@ div.ha-wrapper > img {
 
     max-width: 50px;
     max-height: 50px;
+    min-width: 50px;
     margin-top: auto;
+
+}
+
+
+
+
+div.button-dot-wrapper{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex: 1;
+    margin-left: 10px;
+    margin-right: 10px;;
+
+}
+
+
+button.previous-button, button.next-button{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
 }
