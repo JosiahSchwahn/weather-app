@@ -11,13 +11,15 @@ export default function Weather(){
     const [isLoading, setIsLoading] = React.useState(true);
 
     const API_KEY = `0e24dc66bceaaad7ff88da794fad4a9d`;
-    const QUERY_LOCATION = `Bozeman`;
+    const QUERY_LOCATION = `bozeman`;
    // const forecastDate = `2023-06-06`;
     // Set this parameter to 1 (on) or 0 (off) depending on whether or not you want
     // the API to return weather data split hourly. (Default: 0 - off)
     const hourly = `1`;
     const interval = `1`;
     const units = `f`;
+
+
 
 
     const currentDate = () => {

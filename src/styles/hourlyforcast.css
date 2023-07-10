@@ -1,4 +1,25 @@
 
-.hf_wrapper{
+.live_array{
     display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+div.ha-wrapper{
+
+    display: flex;
+    flex:1 1 0;
+    flex-direction: column;
+    justify-content: flex-start;
+
+
+
+}
+
+div.ha-wrapper > img {
+
+    max-width: 50px;
+    max-height: 50px;
+    margin-top: auto;
+
 }

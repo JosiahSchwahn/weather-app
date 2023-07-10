@@ -14,7 +14,7 @@ import LiveWeather from "./LiveWeather";
 
 const WeatherDetailManager = ({weatherData}) => {
 
-    console.log(weatherData);
+   // console.log(weatherData);
 
 
     return(
@@ -32,6 +32,7 @@ const WeatherDetailManager = ({weatherData}) => {
                 ></LiveWeather>
 
             </div>
+
 
             <div className="weather_details">
                 <WeatherDetails title = "Feels Like" data ={weatherData.current.feelslike} icon = {feelsLogo}></WeatherDetails>

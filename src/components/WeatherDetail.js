@@ -8,7 +8,7 @@ const WeatherDetails = ({title, data, icon}) => {
         <div className="weather_specfic_wrapper">
 
             <div className="ws_icon">
-            <img src={icon} alt="cloud_icon"></img>  
+            <img src={icon} alt="cloud_icon"></img>
             </div>
 
             <div className="ws_info">
