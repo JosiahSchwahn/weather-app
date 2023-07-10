@@ -22,7 +22,7 @@ const LiveWeather = ({description, location, time, temperature, display_unit}) =
         return formattedString;
     }
 
-    function standardTime(militaryTime) {
+    const standardTime = (militaryTime) =>{
         const hours = parseInt(militaryTime.slice(0, 2));
         const minutes = militaryTime.slice(3, 5);
         const meridiem = hours >= 12 ? 'PM' : 'AM';
