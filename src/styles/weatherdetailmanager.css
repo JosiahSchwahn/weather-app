@@ -2,12 +2,13 @@
     box-sizing: border-box;
     display: flex;
     flex-direction: row;
-    
+
+
 }
 
 .live_weather{
     font-style:italic;
-    font-size: 30px;
+    font-size: 2rem;
     font-weight: 600;
     margin-right: auto;
 }
@@ -15,5 +16,45 @@
 .weather_details{
     font-style: oblique;
     margin-left: auto;
+
+    border: solid 1.5px rgba(255, 255, 255, 0.079);
+}
+
+.github{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 270px;;
+    font-size: 2rem;
+    color: #ffffff;
+}
+
+.github_text{
+    border-bottom: solid 1.5px rgba(255, 255, 255, 0.84);
+    padding: 2px;
+}
+
+.github > em{
+    font-size: 1.4rem;
+    color: #ffffff;
+    font-style: normal;
+}
+
+.github_rights_logo{
+    display: flex;
+    align-items: center;
+    font-weight: 100;
+    font-size: 1.3rem;
+    margin-top: 6px;
+}
+
+.github-logo{
+    margin-left: 10px;
+}
+
+.github-logo:hover{
+
+    transform: rotate(20deg);
+    transition: transform 250ms ease-in-out;
 
 }

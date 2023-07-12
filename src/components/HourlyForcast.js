@@ -38,7 +38,6 @@ const HourlyForcast = ({weatherData, currentDate}) => {
             arrayOne.length === 8 ? arrayTwo.length === 8 ? arrayThree.push(array[startingIndex]):
                                     arrayTwo.push(array[startingIndex]):
                                                               arrayOne.push(array[startingIndex]);
-
             startingIndex++;
         }
         return[arrayOne , arrayTwo, arrayThree];
@@ -52,25 +51,30 @@ const HourlyForcast = ({weatherData, currentDate}) => {
 
     //display conversation from milatary time to standard time
     const standardTime = (militaryTime) =>{
-        if(militaryTime.length === 4){
-            const hours = parseInt(militaryTime.slice(0, 2));
-            const minutes = militaryTime.slice(2, 4);
-            const meridiem = hours >= 12 ? 'PM' : 'AM';
-             const standardHours = hours > 12 ? hours - 12 : hours === 0 ? 12 : hours;
-        return `${standardHours}:${minutes} ${meridiem}`;
-        } else{
-            const hours = parseInt(militaryTime.slice(0, 1));
-            const minutes = militaryTime.slice(1, 3);
-            const meridiem = hours >= 12 ? 'PM' : 'AM';
-            const standardHours = hours > 12 ? hours - 12 : hours === 0 ? 12 : hours;
-            return `${standardHours}:${minutes} ${meridiem}`;
+        if (militaryTime === '0') {
+            return `12:00 AM`;
         }
-
-
+        let hours = parseInt(militaryTime.slice(0, militaryTime.length === 4 ? 2 : 1));
+        let minutes = militaryTime.slice(militaryTime.length === 4 ? 2 : 1, 4);
+        const meridiem = hours >= 12 ? 'PM' : 'AM';
+        const standardHours = hours > 12 ? hours - 12 : (hours === 0 ? 12 : hours);
+        return `${standardHours}:${minutes} ${meridiem}`;
     }
-
+    //<div className="hf_icon">{hourObject.weather_descriptions}</div>
     const leftHourlyPage = (hourCarousel) => hourCarousel === 0 ? sethourCarousel(2) : sethourCarousel(hourCarousel - 1);
     const rightHourlyPage = (hourCarousel) => hourCarousel === 2 ? sethourCarousel(0) : sethourCarousel(hourCarousel + 1);
+
+    const buttonFillTracker = (hourCarousel) =>{
+        const dotArray = [dot, dot, dot];
+        dotArray.splice(hourCarousel, 1, dotFilled)
+        return (
+            <div className="button-dot-wrapper">
+                    <img src={dotArray[0]} alt="dot_svg"></img>
+                    <img src={dotArray[1]} alt="dot_svg"></img>
+                    <img src={dotArray[2]} alt="dot_svg"></img>
+            </div>
+        )
+    }
 
     const hourlyArrayJSX = liveArray.map((hourObject, index) => {
         return (
@@ -78,7 +82,7 @@ const HourlyForcast = ({weatherData, currentDate}) => {
           <div className="ha-wrapper" key={index}>
             <div className="hf_time">{standardTime(hourObject.time)}</div>
             <div className="hf_temperature">{hourObject.temperature + ` °${weatherData.request.unit.toUpperCase()}`}</div>
-            <div className="hf_icon">{hourObject.weather_descriptions}</div>
+
             <img src={weatherDescriptionMap[hourObject.weather_descriptions]} alt={`${hourObject.weather_descriptions}`} />
           </div>
         );
@@ -92,11 +96,7 @@ const HourlyForcast = ({weatherData, currentDate}) => {
                     <img src={rightArrow} alt="right_button_arrow"></img>
                 </button>
 
-                <div className="button-dot-wrapper">
-                    <img src={dot} alt="right_button_arrow"></img>
-                    <img src={dot} alt="right_button_arrow"></img>
-                    <img src={dot} alt="right_button_arrow"></img>
-                </div>
+                {buttonFillTracker(hourCarousel)}
 
                 <button className="next-button" onClick={() => rightHourlyPage(hourCarousel)}>
                     <img src={leftArrow} alt="right_button_arrow" ></img>

@@ -6,11 +6,11 @@ import HourlyForcast from "./HourlyForcast";
 
 export default function Weather(){
 
-    const [weatherData, setWeatherData] = React.useState(null);
+    const [weatherData, setWeatherData] = React.useState({});
+    const [location, setLocation] = React.useState('Bozeman')
     const [isLoading, setIsLoading] = React.useState(true);
 
     const API_KEY = `0e24dc66bceaaad7ff88da794fad4a9d`;
-    const QUERY_LOCATION = `bozeman`;
    // const forecastDate = `2023-06-06`;
     // Set this parameter to 1 (on) or 0 (off) depending on whether or not you want
     // the API to return weather data split hourly. (Default: 0 - off)
@@ -39,7 +39,7 @@ export default function Weather(){
             //a singular string literal wasn't working
             const response = await fetch(`http://api.weatherstack.com/historical` +
             `?access_key=${API_KEY}` +
-            `&query=${QUERY_LOCATION}` +
+            `&query=${location}` +
             `&historical_date=${currentDate()}` +
             `&hourly=${hourly}` +
             `&interval=${interval}` +
@@ -69,7 +69,19 @@ export default function Weather(){
             {isLoading ? (<div>Application is Loading</div>) :
             //when API returns, change from loading state to displaying weather data
             (<>
+
+
                 <WeatherDetailManager weatherData = {weatherData}></WeatherDetailManager>
+
+                <form>
+                    <label>City Search</label>
+                    <input type="text"
+                    required
+                    value={weatherData}
+
+                    ></input>
+                </form>
+
                 <HourlyForcast weatherData = {weatherData} currentDate = {currentDate()}></HourlyForcast>
             </>
             )}

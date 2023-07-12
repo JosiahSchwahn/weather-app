@@ -1,12 +1,15 @@
 :root{
 
-  --font-color-gray: #303030;
+  --font-color-gray: #ffffff;
 
   box-sizing: border-box;
   overflow: hidden;
   height: 100%;
 
-  background: url("./assets/images/background.jpg") no-repeat center center fixed;
+  background: url('./assets/images/final_bg.jpg') no-repeat center center fixed;
+  background-blend-mode: hard-light;
+  fill: purple;
+
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -23,7 +26,8 @@ div#root{
   height: 100%;
 }
 html{
-  padding: 10px;
+
+  font-size: 8px;
 }
 
 html, body{

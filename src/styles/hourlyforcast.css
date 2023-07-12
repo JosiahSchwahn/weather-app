@@ -17,7 +17,6 @@ div.button-wrapper{
 
 .hf-component-wrapper{
 
-    height: 250px;
     margin-top: auto;
 
 }
@@ -25,7 +24,20 @@ div.button-wrapper{
 .live_array{
     display: flex;
     flex-direction: row;
-    gap: 10px;
+    justify-content: space-around;
+    flex: 1 1 0;
+    height: 140px;
+
+    padding: 30px 20px 30px 40px;
+
+
+    backdrop-filter: blur(1px) saturate(144%);
+    -webkit-backdrop-filter: blur(1px) saturate(164%);
+    background-color: rgba(255, 158, 126, 0.079);
+    border-radius: 2px;
+    border-top: solid 1.5px rgba(255, 255, 255, 0.079);
+
+
 }
 
 div.ha-wrapper{
@@ -35,20 +47,29 @@ div.ha-wrapper{
     flex-direction: column;
     justify-content: flex-start;
 
+    font-size: 2rem;
+    color: var(--font-color-gray);
+    font-weight: 200;
+
 
 
 }
 
 div.ha-wrapper > img {
 
-    max-width: 50px;
-    max-height: 50px;
-    min-width: 50px;
+    max-width: 60px;
+    max-height: 60px;
+    min-width: 60px;
     margin-top: auto;
-
 }
 
+div.hf_time{
+    font-size: 1.5rem;
+}
 
+div.hf_temperature{
+    font-size: 4rem;
+}
 
 
 div.button-dot-wrapper{

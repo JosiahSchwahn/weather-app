@@ -3,26 +3,23 @@ div.lw_wrapper{
     color: var(--font-color-gray);
 }
 
-
 div.lw_description, div.lw_temperature{
 
-    font-size: 48px;
+    font-size: 7rem;
     font-style: normal;
-
-
+    font-weight: 200;
 }
 
 div.lw_location{
-
-    font-size: 20px;
-
-
+    font-size: 4rem;
+    font-weight: 500;
 }
 
 div.lw_date, div.lw_time{
-
-    font-size: 16px;
-
+    margin-left: auto;
+    font-size: 2rem;
+    font-weight: 300;
 }
+
 
 

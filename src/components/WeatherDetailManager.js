@@ -7,6 +7,8 @@ import cloudLogo from "../assets/svgs/detailSVGs/CLOUD.svg";
 import rainLogo from "../assets/svgs/detailSVGs/RAIN.svg";
 import windLogo from "../assets/svgs/detailSVGs/WIND.svg";
 
+import gitHub from '../assets/svgs/buttonSVGs/github.svg'
+
 
 import WeatherDetails from "./WeatherDetail";
 import LiveWeather from "./LiveWeather";
@@ -29,6 +31,14 @@ const WeatherDetailManager = ({weatherData}) => {
                 display_unit = {weatherData.request.unit}
                 ></LiveWeather>
 
+            </div>
+
+            <div className="github">
+                    <div className="github_text">Weather App</div>
+                    <div className="github_rights_logo">
+                        <em> All rights reserved @Josiah Schwahn 2023 </em>
+                        <a href="https://github.com/JosiahSchwahn/weather-app" target="_blank" rel="noopener noreferrer"><img className='github-logo' src={gitHub} alt="github icon"></img></a>
+                    </div>
             </div>
 
 
