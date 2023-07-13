@@ -5,19 +5,20 @@ div.lw_wrapper{
 
 div.lw_description, div.lw_temperature{
 
-    font-size: 7rem;
+    font-size: 9rem;
     font-style: normal;
     font-weight: 200;
+
 }
 
 div.lw_location{
-    font-size: 4rem;
-    font-weight: 500;
+    font-size: 5rem;
+    font-weight: 400;
 }
 
 div.lw_date, div.lw_time{
     margin-left: auto;
-    font-size: 2rem;
+    font-size: 3rem;
     font-weight: 300;
 }
 

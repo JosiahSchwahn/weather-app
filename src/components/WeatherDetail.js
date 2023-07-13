@@ -1,7 +1,7 @@
 import React from "react";
 import '../styles/weatherdetail.css'
 
-const WeatherDetails = ({title, data, icon}) => {
+const WeatherDetails = ({title, data, icon, units}) => {
 
 
     return(
@@ -16,9 +16,8 @@ const WeatherDetails = ({title, data, icon}) => {
                 <div className="ws_title">
                     <b>{title}</b>
                 </div>
-
                 <div className="ws_value">
-                    {data}
+                    {data}{units}
                 </div>
 
             </div>

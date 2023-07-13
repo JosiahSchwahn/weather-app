@@ -16,7 +16,6 @@ import LiveWeather from "./LiveWeather";
 
 const WeatherDetailManager = ({weatherData}) => {
 
-   console.log(weatherData);
     return(
 
         <div className="wdm_wrapper">
@@ -43,10 +42,10 @@ const WeatherDetailManager = ({weatherData}) => {
 
 
             <div className="weather_details">
-                <WeatherDetails title = "Feels Like" data ={weatherData.current.feelslike} icon = {feelsLogo}></WeatherDetails>
-                <WeatherDetails title = "Humidity" data ={weatherData.current.humidity} icon = {cloudLogo}></WeatherDetails>
-                <WeatherDetails title = "UV Index" data ={weatherData.current.uv_index} icon = {rainLogo}>UV INDEX</WeatherDetails>
-                <WeatherDetails title = "Wind Speed" data={weatherData.current.wind_speed} icon = {windLogo}></WeatherDetails>
+                <WeatherDetails title = "Feels Like" data ={weatherData.current.feelslike} icon = {feelsLogo} units = {' °F'}></WeatherDetails>
+                <WeatherDetails title = "Humidity" data ={weatherData.current.humidity} icon = {cloudLogo} units = {' %'}></WeatherDetails>
+                <WeatherDetails title = "UV Index" data ={weatherData.current.uv_index} icon = {rainLogo} units = {' UV'}></WeatherDetails>
+                <WeatherDetails title = "Wind Speed" data={weatherData.current.wind_speed} icon = {windLogo} units = {' mph'}></WeatherDetails>
 
             </div>
 

@@ -3,10 +3,7 @@ import Weather from './Weather'
 
 const SearchWeather = () => {
 
-    return(
 
-        <></>
-    );
 
 
 

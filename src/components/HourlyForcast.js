@@ -25,7 +25,8 @@ const HourlyForcast = ({weatherData, currentDate}) => {
     const weatherDescriptionMap = {
         'Partly cloudy': partlyCloudly, 'Light rain shower': lightRainShower, 'Clear': sunny, 'Sunny': sunny,
         'Mist': mist, 'Cloudy': overcast, 'Overcast': overcast, 'Patchy rain possible': patchRainPossible,
-        'Thundery outbreaks possible': thunderyOutbreaksPossible
+        'Thundery outbreaks possible': thunderyOutbreaksPossible, 'Moderate or heavy rain shower':lightRainShower,
+        'Moderate rain at times': lightRainShower
     };
 
     const arraySections = (array, startingIndex) => {

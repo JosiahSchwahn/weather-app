@@ -39,7 +39,7 @@ const LiveWeather = ({description, location, time, temperature, display_unit}) =
             <div className="lw_description">{description}</div>
             <div className="lw_location">{location}</div>
             <div className="lw_date">{dateDisplay()}</div>
-            <div className="lw_time">{standardTime(time.slice(11))}</div>
+            <div className="lw_time">Local Time: {standardTime(time.slice(11))}</div>
             <div className="lw_temperature">{temperature}°{display_unit.toUpperCase()}</div>
 
         </div>
