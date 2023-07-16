@@ -33,6 +33,7 @@ export default function ErrorModal({modalOpen, setModalOpen}) {
             For more informaton you can find the search query paramaters at
            <a href='https://weatherstack.com/documentation#query_parameter' target="_blank">Here</a>
           </p>
+          <div></div>
         </Box>
       </Modal>
     </div>
