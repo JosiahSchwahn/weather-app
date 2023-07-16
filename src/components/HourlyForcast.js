@@ -2,13 +2,15 @@ import React,{useState} from "react";
 import '../styles/hourlyforcast.css'
 
 //icons for hourly data
-import lightRainShower from '../assets/svgs/hourlySVGs/LIGHT RAIN SHOWER.svg'
-import mist from '../assets/svgs/hourlySVGs/MIST.svg'
+import rainShower from '../assets/svgs/hourlySVGs/LIGHT RAIN SHOWER.svg'
+import mist from '../assets/svgs/hourlySVGs/MIST.svg';
 import overcast from '../assets/svgs/hourlySVGs/OVERCAST.svg'
 import partlyCloudly from '../assets/svgs/hourlySVGs/PARTLY CLOUDY.svg'
 import patchRainPossible from '../assets/svgs/hourlySVGs/PATCHY RAIN POSSIBLE.svg'
 import sunny from '../assets/svgs/hourlySVGs/SUNNY.svg'
 import thunderyOutbreaksPossible from '../assets/svgs/hourlySVGs/THUNDERY OUTBREAKS POSSIBLE.svg'
+import fog from '../assets/svgs/hourlySVGs/FOG.svg';
+import lightRain from '../assets/svgs/hourlySVGs/LIGHT RAIN.svg';
 
 //icons for custom button
 import rightArrow from '../assets/svgs/buttonSVGs/feArrowDown2-1.svg';
@@ -22,11 +24,14 @@ const HourlyForcast = ({weatherData, currentDate}) => {
 
     const [hourCarousel, sethourCarousel] = React.useState(0);
 
+    // mist, fog , Light drizzle, Moderate rain, Heavy rain,
+
     const weatherDescriptionMap = {
-        'Partly cloudy': partlyCloudly, 'Light rain shower': lightRainShower, 'Clear': sunny, 'Sunny': sunny,
+        'Partly cloudy': partlyCloudly, 'Light rain shower': rainShower, 'Clear': sunny, 'Sunny': sunny,
         'Mist': mist, 'Cloudy': overcast, 'Overcast': overcast, 'Patchy rain possible': patchRainPossible,
-        'Thundery outbreaks possible': thunderyOutbreaksPossible, 'Moderate or heavy rain shower':lightRainShower,
-        'Moderate rain at times': lightRainShower
+        'Thundery outbreaks possible': thunderyOutbreaksPossible, 'Moderate or heavy rain shower':rainShower,
+        'Moderate rain at times': lightRain, 'Moderate rain': rainShower, 'Heavy rain': rainShower, 'Light drizzle': lightRain,
+        'Fog': fog, 'Light rain': lightRain
     };
 
     const arraySections = (array, startingIndex) => {
