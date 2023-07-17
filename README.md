@@ -50,10 +50,6 @@
 ## About The Project
 <div></div>
 
-<div style="display: flex; flex-direction: column; align-items: center; justify-content:center;">
-    <img src="screenshots/profile-settings-modal-screenshot.png" alt="Profile_Modal_screenshot" width="381px" height="651px">
-    <img src="screenshots/add-project-modal-screenshot.png" alt="Add_Project_Modal_screenshot" width="414.5px" height="241px">
-</div>
 
 ![Weather App Main Screenshot][product-screenshot-main]
 ![Weather App Invalid Search][product-screenshot-invalid-search]
