@@ -3,9 +3,6 @@ import '../styles/liveweather.css'
 
 const LiveWeather = ({description, location, time, temperature, display_unit}) => {
 
-    const buttonText = (display_unit === 'c') ? 'F' : 'C';
-
-    const changeButtonText = (units) => (units === 'F') ? 'C': 'F';
 
     const dateDisplay = () => {
         const date = new Date();

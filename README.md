@@ -1,5 +1,6 @@
 * React.JS
 * Node.JS (api server proxi)
+* Restful API using WeatherStack
 * ES6 JS
 * CSS3
 * HTML5
@@ -47,8 +48,14 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 <div></div>
+[product-screenshot-main]: screenshots/weather_app_main.png
+[product-screenshot-invalid-search]: screenshots/invalid_search.png
+[product-screenshot-figma]: screenshots/figma_icon_screenshot.png
+[product-screenshot-excalidraw]: screenshots/excalidraw_component_diagram.png
 
-![Todoist CLone Main Screenshot][product-screenshot-main]
+
+
+![Weather App Main Screenshot][product-screenshot-main]
 <div style="display: flex; flex-direction: column; align-items: center; justify-content:center;">
     <img src="screenshots/profile-settings-modal-screenshot.png" alt="Profile_Modal_screenshot" width="381px" height="651px">
     <img src="screenshots/add-project-modal-screenshot.png" alt="Add_Project_Modal_screenshot" width="414.5px" height="241px">
@@ -60,45 +67,40 @@
 "The main goal of this project was to master vanilla JavaScript by cloning one of my all-time favorite web applications, "Todoist." It's a super effective task tracking app that was able to manage all the small tasks I needed to complete in a day.
 I wanted to be able to fully clone a website before jumping into any frameworks and additional tech abstractions to solidify my foundation and understanding of web development."
 
+"The main objective of this project was to learn React, RESTful APIs, continue JavaScript ES6 devolpment skills, fullstack devolpment, fullstack tools and technolgies, and UX/UI design skills. All of which are apart of this project".
+
 Learning Objectives
-* Javascript ES6 -> Closure, modules, design patterns (module pattern, factory functions, singleton pattern*), OOP princples.
-* Package Managers (NPM) ->  dependencies, NPM scripts (npm run build), repository of plugins!
-* Webpack -> Module bundler, loaders, entry and output points, transpilers, dependency tree for your JS/images/JSON/CSV files.
-* Figma -> UX/UI design, power of SVGs, designing custom icons and images.
-* Advanced CSS -> :root properties, responsive web design, advanced query selectors and animations.
-* Advanced HTML -> Form validation, transforms and transitions (keyframes).
+* React.js -> Components, Props, States, Hooks (state - useState, lifecycle - useEffect), functional components, context API (state managament), JSX, conditional rendering, lifecycles, forms, arrow-functions, etc...
+* Node.JS -> Using a node server as a proxy for our API to avoid CORS issues in devolpement.
+* JavaScript ES6 -> Fetch for WeatherStack Restful API, Async/await promise syntax sugar (over promises or callbacks), and nested ternary operators.
+* WeatherStack API -> Using HTTP and HTTPS to GET currently weather data. Restful API.
+* Material UI -> Used for searching/on-start loading animation + react conditional rendering.
+* Package Managers (NPM) ->  dependencies, NPM scripts (npm run build), various additional packages used throughout the project.
+* Webpack (create-react-app) -> Module bundler, loaders, entry and output points, transpilers.
+* Create-react-app!
+* Figma -> UX/UI design, SVGs, designing custom icons and images.
+* Advanced CSS -> CSS modules, animations, :root properties & variables, responsive web design (not built for mobile), and
+advanced query selectors.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ### Built With
 
-[![React][react-shield]][react-url]
-[![JavaScript][javascript-shield]][javascript-url]
-[![CSS3][css3-shield]][css3-url]
-[![HTML][html5-shield]][html5-url]
-[![Node][node-shield]][node-url]
-[![NPM][npm-shield]][npm-url]
-[![Webpack][webpack-shield]][webpack-url]
-[![Figma][figma-shield]][figma-url]
-[![Adobe Creative Cloud][adobe-creative-cloud-shield]][adobe-creative-cloud-url]
-[![Git][git-shield]][git-url]
-[![Github][github-shield]][github-url]
-[![Powershell][powershell-shield]][powershell-url]
+* [![React][react-shield]][react-url]
+* [![JavaScript][javascript-shield]][javascript-url]
+* [![CSS3][css3-shield]][css3-url]
+* [![HTML][html5-shield]][html5-url]
+* [![Node][node-shield]][node-url]
+* [![NPM][npm-shield]][npm-url]
+* [![Webpack][webpack-shield]][webpack-url]
+* [![Material UI][material-ui-shield]][material-ui-url]
+* [![Webpack][webpack-shield]][webpack-url]
+* [![Figma][figma-shield]][figma-url]
+* [![Adobe Creative Cloud][adobe-creative-cloud-shield]][adobe-creative-cloud-url]
+* [![Git][git-shield]][git-url]
+* [![Github][github-shield]][github-url]
+* [![Powershell][powershell-shield]][powershell-url]
 
-
-
-[react-shield]: https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB
-[javascript-shield]: https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black
-[css3-shield]: https://img.shields.io/badge/CSS-239120?&style=for-the-badge&logo=css3&logoColor=white
-[html5-shield]: https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white
-[node-shield]: https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white
-[npm-shield]: https://img.shields.io/badge/npm-CB3837?style=for-the-badge&logo=npm&logoColor=white
-[webpack-shield]: https://img.shields.io/badge/Webpack-8DD6F9?style=for-the-badge&logo=Webpack&logoColor=white
-[figma-shield]: https://img.shields.io/badge/Figma-F24E1E?style=for-the-badge&logo=figma&logoColor=white
-[adobe-creative-cloud-shield]: https://img.shields.io/badge/Adobe%20Creative%20Cloud-DA1F26?style=for-the-badge&logo=Adobe%20Creative%20Cloud&logoColor=white
-[git-shield]: https://img.shields.io/badge/GIT-E44C30?style=for-the-badge&logo=git&logoColor=white
-[github-shield]: https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white
-[powershell-shield]:https://img.shields.io/badge/powershell-5391FE?style=for-the-badge&logo=powershell&logoColor=white
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -137,16 +139,6 @@ Install latest version of NPM
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
-
-<!-- USAGE EXAMPLES -->
-## Usage
-
-*Todoist Clone*
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-
-
 <!-- CONTRIBUTING -->
 ## Contributing
 
@@ -177,9 +169,9 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
 <!-- CONTACT -->
 ## Contact
 
-Josiah Schwahn - schwahn.josiah@gmail.com | josiah@missionranch.co
+Josiah Schwahn - personal: schwahn.josiah@gmail.com | work: josiah@missionranch.co
 
-Project Link: [[https://github.com/your_username/repo_name](https://github.com/your_username/repo_name)](https://github.com/JosiahSchwahn/todoist-clone)
+Project Link: [[https://github.com/your_username/repo_name](https://github.com/JosiahSchwahn?tab=repositories)](https://github.com/JosiahSchwahn/weather-app)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -214,6 +206,7 @@ Project Link: [[https://github.com/your_username/repo_name](https://github.com/y
 [node-shield]: https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white
 [npm-shield]: https://img.shields.io/badge/npm-CB3837?style=for-the-badge&logo=npm&logoColor=white
 [webpack-shield]: https://img.shields.io/badge/Webpack-8DD6F9?style=for-the-badge&logo=Webpack&logoColor=white
+[material-ui-shield]: https://img.shields.io/badge/Material%20UI-007FFF?style=for-the-badge&logo=mui&logoColor=white
 [figma-shield]: https://img.shields.io/badge/Figma-F24E1E?style=for-the-badge&logo=figma&logoColor=white
 [adobe-creative-cloud-shield]: https://img.shields.io/badge/Adobe%20Creative%20Cloud-DA1F26?style=for-the-badge&logo=Adobe%20Creative%20Cloud&logoColor=white
 [git-shield]: https://img.shields.io/badge/GIT-E44C30?style=for-the-badge&logo=git&logoColor=white
@@ -228,6 +221,7 @@ Project Link: [[https://github.com/your_username/repo_name](https://github.com/y
 [node-url]: https://nodejs.org
 [npm-url]: https://www.npmjs.com/
 [webpack-url]: https://webpack.js.org/
+[material-ui-url]: https://mui.com/
 [figma-url]: https://www.figma.com/
 [adobe-creative-cloud-url]: https://www.adobe.com/creativecloud.html
 [git-url]: https://git-scm.com/
