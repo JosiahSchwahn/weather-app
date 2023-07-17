@@ -83,7 +83,7 @@ export default function Weather(){
                 <WeatherDetailManager weatherData = {weatherData}></WeatherDetailManager>
                 <form onSubmit={searchNewCity}>
                     <input type="text" name="city" placeholder="search location..."></input>
-                    <button type="submit" className="form-submit-button">Submit</button>
+                    <button type="submit" className="form-submit-button">Search</button>
                 </form>
                 <HourlyForcast weatherData = {weatherData} currentDate = {currentDate()}></HourlyForcast>
             </>
