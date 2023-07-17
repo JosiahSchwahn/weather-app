@@ -45,29 +45,23 @@
 
 
 
+
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 <div></div>
-[product-screenshot-main]: screenshots/weather_app_main.png
-[product-screenshot-invalid-search]: screenshots/invalid_search.png
-[product-screenshot-figma]: screenshots/figma_icon_screenshot.png
-[product-screenshot-excalidraw]: screenshots/excalidraw_component_diagram.png
 
-
-
-![Weather App Main Screenshot][product-screenshot-main]
 <div style="display: flex; flex-direction: column; align-items: center; justify-content:center;">
     <img src="screenshots/profile-settings-modal-screenshot.png" alt="Profile_Modal_screenshot" width="381px" height="651px">
     <img src="screenshots/add-project-modal-screenshot.png" alt="Add_Project_Modal_screenshot" width="414.5px" height="241px">
 </div>
 
-![Add Task Modal Screenshot][product-screenshot-add-task]
-![Figma Design Board Screenshot][product-screenshot-figma]
+![Weather App Main Screenshot][product-screenshot-main]
+![Weather App Invalid Search][product-screenshot-invalid-search]
+![Weather App Figma][product-screenshot-figma]
+![Weather App Excalidraw][product-screenshot-excalidraw]
 
-"The main goal of this project was to master vanilla JavaScript by cloning one of my all-time favorite web applications, "Todoist." It's a super effective task tracking app that was able to manage all the small tasks I needed to complete in a day.
-I wanted to be able to fully clone a website before jumping into any frameworks and additional tech abstractions to solidify my foundation and understanding of web development."
 
-"The main objective of this project was to learn React, RESTful APIs, continue JavaScript ES6 devolpment skills, fullstack devolpment, fullstack tools and technolgies, and UX/UI design skills. All of which are apart of this project".
+"The main objective of this project was to learn React, RESTful APIs, continue JavaScript ES6 devolpment skills, fullstack devolpment, fullstack tools and technolgies, and UX/UI design skills. All of which are apart of this project."
 
 Learning Objectives
 * React.js -> Components, Props, States, Hooks (state - useState, lifecycle - useEffect), functional components, context API (state managament), JSX, conditional rendering, lifecycles, forms, arrow-functions, etc...
@@ -167,11 +161,11 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
 
 
 <!-- CONTACT -->
-## Contact
+## Email Contact
 
-Josiah Schwahn - personal: schwahn.josiah@gmail.com | work: josiah@missionranch.co
+Josiah Schwahn -> personal: schwahn.josiah@gmail.com | work: josiah@missionranch.co
 
-Project Link: [[https://github.com/your_username/repo_name](https://github.com/JosiahSchwahn?tab=repositories)](https://github.com/JosiahSchwahn/weather-app)
+Project Link: [[Weather App Repo](https://github.com/JosiahSchwahn/weather-app)](https://github.com/JosiahSchwahn/weather-app)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
