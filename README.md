@@ -42,9 +42,6 @@
     <li><a href="#acknowledgments">Acknowledgments</a></li>
   </ol>
 </details>
-[product-screenshot-main]
-
-
 
 <!-- ABOUT THE PROJECT -->
 ## About The Project
@@ -181,10 +178,10 @@ Project Link: [[Weather App Repo](https://github.com/JosiahSchwahn/weather-app)]
 [license-url]: https://github.com/othneildrew/Best-README-Template/blob/master/LICENSE.txt
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://www.linkedin.com/in/josiah-schwahn-b58522184
-[product-screenshot-app]: screenshots/weather_app_main.png
+[product-screenshot-app]: screenshots/weather_app_main.PNG
 [product-screenshot-invalid-search]: screenshots/invalid_search.png
 [product-screenshot-figma]: screenshots/figma_icon_screenshot.png
-[product-screenshot-excalidraw]: screenshots/excalidraw_component_diagram.png
+[product-screenshot-excalidraw]: screenshots/excalidraw_component_diagram.PNG
 [react-shield]: https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB
 [javascript-shield]: https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black
 [css3-shield]: https://img.shields.io/badge/CSS-239120?&style=for-the-badge&logo=css3&logoColor=white
