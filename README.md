@@ -48,8 +48,6 @@
 
 <!-- ABOUT THE PROJECT -->
 ## About The Project
-<div></div>
-
 
 ![Weather App Main Screenshot][product-screenshot-main]
 ![Weather App Invalid Search][product-screenshot-invalid-search]
