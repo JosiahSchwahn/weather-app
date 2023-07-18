@@ -1,7 +1,7 @@
 * React.JS
 * Node.JS (api server proxi)
 * Restful API using WeatherStack
-* ES6 JS
+* JavaScript ES6
 * CSS3
 * HTML5
 * Webpack for Module Bundler (create-react-app)
@@ -10,7 +10,6 @@
 * Material UI
 * MidJourney
 * Excalidraw for Component Hierarchy (Thinking in React Design Princples)
-* APILayer // Weather Stack for weather Rest API
 
 
 
