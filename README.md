@@ -24,7 +24,7 @@
     <li>
       <a href="#about-the-project">About The Project</a>
       <ul>
-        <li><a href="#built-with">Built With</a></li>s
+        <li><a href="#built-with">Built With</a></li>
       </ul>
     </li>
     <li>
@@ -53,7 +53,7 @@
 ![Weather App Excalidraw][product-screenshot-excalidraw]
 
 
-"The main objective of this project was to learn React, RESTful APIs, continue JavaScript ES6 devolpment skills, fullstack devolpment, fullstack tools and technolgies, and UX/UI design skills. All of which are apart of this project."
+## "The main objective of this project was to learn React, RESTful APIs, continue JavaScript ES6 devolpment skills, fullstack devolpment, fullstack tools and technolgies, and UX/UI design skills. All of which are apart of this project."
 
 Learning Objectives
 * React.js -> Components, Props, States, Hooks (state - useState, lifecycle - useEffect), functional components, context API (state managament), JSX, conditional rendering, lifecycles, forms, arrow-functions, etc...
@@ -157,7 +157,7 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
 
 Josiah Schwahn -> personal: schwahn.josiah@gmail.com | work: josiah@missionranch.co
 
-Project Link: [[Weather App Repo](https://github.com/JosiahSchwahn/weather-app)](https://github.com/JosiahSchwahn/weather-app)
+Project Link: https://github.com/JosiahSchwahn/weather-app
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 

@@ -12,12 +12,12 @@ export default function Weather(){
     const [search, setSearch] = React.useState('Bozeman');
     const [isLoading, setIsLoading] = React.useState(true);
 
-    const API_KEY = `0e24dc66bceaaad7ff88da794fad4a9d`;
+    const API_KEY = `${process.env.REACT_APP_API_KEY}`
     // Set this parameter to 1 (on) or 0 (off) depending on whether or not you want
     const hourly = `1`;
     const interval = `1`;
     const units = `f`;
-
+    console.log(API_KEY)
     const currentDate = () => {
         const currentDate = new Date();
         const year = currentDate.getFullYear();
